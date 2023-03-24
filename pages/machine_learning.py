@@ -38,7 +38,7 @@ def inference(row, cols, scaler, ohe, model):
     
     price = model.predict(df)[0]
     
-    return st.write(f"The prediction price is {price}")
+    return price
 
 
 # In[ ]:
@@ -92,4 +92,4 @@ cols = ['fueltype', 'aspiration',
 if (st.button('Predict Car Price')):    
     sc, ohe, model = load('models/scaler.joblib', 'models/ohe.joblib', 'models/XGBoost.joblib')
     result = inference(row, cols, sc, ohe, model)
-    st.write(result)
+    st.write(<p>The price is {result} </p>)
