@@ -51,7 +51,7 @@ elif page == "Scatterplot":
 
     fig, ax = plt.subplots()
     st.write(f"## Correlation between {page_scatter} Base and Price")
-    ax = sns.scatterplot(df[page_scatter], df['price'])
+    ax = sns.scatterplot(data=df,x=page_scatter, y='price')
     st.pyplot(fig)
 
     text = f"based on the {page_scatter} graph above, we can see that as {page_scatter} increases, so does the price."
