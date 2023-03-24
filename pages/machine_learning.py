@@ -38,7 +38,7 @@ def inference(row, cols, scaler, ohe, model):
     
     price = model.predict(df)[0]
     
-    return price
+    return st.write(f"The prediction price is {price}")
 
 
 # In[ ]:
