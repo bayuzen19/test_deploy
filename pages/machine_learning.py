@@ -92,4 +92,4 @@ cols = ['fueltype', 'aspiration',
 if (st.button('Predict Car Price')):    
     sc, ohe, model = load('models/scaler.joblib', 'models/ohe.joblib', 'models/XGBoost.joblib')
     result = inference(row, cols, sc, ohe, model)
-    st.write(<p>The price is {result} </p>)
+    st.write(f"The predict price result is {price}")
