@@ -6,7 +6,7 @@ import seaborn as sns
 
 
 #==== read dataset ===
-df = pd.read_csv("data\CarPrice_Assignment.csv")
+df = pd.read_csv("data/CarPrice_Assignment.csv")
 
 st.title("Car Price Prediction")
 st.subheader("Explonatory Data Analytics")
